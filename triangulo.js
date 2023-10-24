@@ -8,7 +8,7 @@ const ladoA = Number(form.inLadoA.value)
 const ladoB = Number(form.inLadoB.value)
 const ladoC = Number(form.inLadoC.value)
 
-if((ladoA > ladoB + ladoC)|| (laldoB > ladoA + ladoC) || (ladoC > ladoA + ladoB)){
+if((ladoA > ladoB + ladoC)|| (ladoB > ladoA + ladoC) || (ladoC > ladoA + ladoB)){
     alert("Essas medidas não podem formar um triângulo. Um dos lados não podem ser maior que a soma dos outros dois.")
     form.inLadoA.focus()
     form.inLadoB.focus()
@@ -18,9 +18,9 @@ if((ladoA > ladoB + ladoC)|| (laldoB > ladoA + ladoC) || (ladoC > ladoA + ladoB)
 
 resp.innerText = 'Lados podem formar um triângulo'
 
-if(ladoA -- ladoB && ladoA-- ladoC){
+if(ladoA == ladoB && ladoA == ladoC){
     resp1.innerText = 'Tipo Equilátero'
-} else if((ladoA -- ladoB) || (ladoA -- ladoC) || (ladoB -- ladoC)){
+} else if((ladoA == ladoB) || (ladoA == ladoC) || (ladoB == ladoC)){
     resp1.innerText = 'Tipo Isóceles'
 }else{
     resp1.innerText = 'Tipo Escaleno'
